@@ -1,0 +1,20 @@
+.ListWithPinkColor>ul>li:nth-child(even){
+   color: pink;
+}
+
+.unpairedListElement>ul>li:nth-child(odd){
+    font-size: 22px;
+}
+
+.pseudoElement>ul>li:nth-child(2n+4)::after {
+    content: "!";
+}
+
+.purpleColorForTheLastElement>ul>li:last-child{
+    color: violet;
+}
+
+.sizeForTheFirstLettersOfTheList>ul>li::first-letter{
+    font-size: 30px;
+    color: red;
+}
