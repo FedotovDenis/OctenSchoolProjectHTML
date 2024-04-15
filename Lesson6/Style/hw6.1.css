@@ -1,0 +1,45 @@
+/* Cтили для мобильной версии расчитывать на 600px */
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Убираем горизонтальный скролл */
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-gap: 5px;
+    padding: 5px;
+    grid-template-areas:
+    "header header"
+    "main aside";
+    grid-auto-rows: 20vh 80vh;
+    grid-auto-columns: 3fr 1fr;
+}
+
+.header, .main, .aside {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid;
+}
+
+.header {
+    grid-area: header;
+    background-color: pink;
+}
+
+.main {
+    grid-area: main;
+    background-color: skyblue;
+}
+
+.aside {
+    grid-area: aside;
+    background-color: aquamarine;
+}
+
+span {
+    font-size: 2em;
+}

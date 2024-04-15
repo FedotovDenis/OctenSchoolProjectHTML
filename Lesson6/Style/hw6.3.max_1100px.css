@@ -1,0 +1,67 @@
+@media screen and (min-width: 1101px) and (max-width: 30000px) {
+    * {
+        margin: 0;
+    }
+    .links{
+        display: flex;
+        .link1, .link2, .link3, .link4{
+            font-size: 40px;
+            height: 5vh;
+            width: 7vw;
+            margin: 5px;
+            background-color: #6f86e3;
+        }
+    }
+    section {
+        height: 90vh;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "header header"
+        "Article1 Article2"
+        "Article3 Article4"
+        "footer footer";
+        grid-template-rows: 5fr 3fr 3fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    }
+    header {
+        grid-area: header;
+        background-color: #6f86e3;
+    }
+
+    .Article1{
+        grid-area: Article1;
+        background-color: #6f86e3;
+    }
+    .Article2{
+        grid-area: Article2;
+        background-color: #6f86e3;
+    }
+    .Article3{
+        grid-area: Article3;
+        background-color: #6f86e3;
+    }
+    .Article4{
+        grid-area: Article4;
+        background-color: #6f86e3;
+    }
+    footer{
+        grid-area: footer;
+        background-color: #6f86e3;
+    }
+
+    header, footer{
+        margin: 5px;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Article1, .Article2, .Article3, .Article4 {
+        margin: 5px;
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

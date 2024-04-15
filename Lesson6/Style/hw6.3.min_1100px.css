@@ -1,0 +1,66 @@
+@media screen and (min-width: 601px) and (max-width: 1100px) {
+    * {
+        margin: 0;
+    }
+    .links{
+        display: flex;
+        .link1, .link2, .link3, .link4{
+            font-size: 30px;
+            height: 5vh;
+            width: 15vw;
+            margin: 5px;
+            background-color: #6f86e3;
+        }
+    }
+    section {
+        height: 90vh;
+        width: 100%;
+        display: grid;
+        grid-template-areas:
+        "header header header header"
+        "Article1 Article2 Article3 Article4"
+        "footer footer footer footer";
+        grid-template-rows: 1fr 1fr 1fr ;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    header{
+        grid-area: header;
+        background-color: #6f86e3;
+    }
+
+    .Article1{
+        grid-area: Article1;
+        background-color: #6f86e3;
+    }
+    .Article2{
+        grid-area: Article2;
+        background-color: #6f86e3;
+    }
+    .Article3{
+        grid-area: Article3;
+        background-color: #6f86e3;
+    }
+    .Article4{
+        grid-area: Article4;
+        background-color: #6f86e3;
+    }
+    footer{
+        grid-area: footer;
+        background-color: #6f86e3;
+    }
+
+    header, footer{
+        margin: 5px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .Article1, .Article2, .Article3, .Article4 {
+        margin: 5px;
+        font-size: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}

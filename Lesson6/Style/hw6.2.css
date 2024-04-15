@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* відноситись до зовнішніх меж */
+}
+
+section {
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "header header header header"
+    "aside aside aside article"
+    "card1 card2 card3 article";
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+header {
+    grid-area: header;
+    background-color: #ffcc00;
+}
+
+aside {
+    grid-area: aside;
+    background-color: #00bfff;
+}
+
+article {
+    grid-area: article;
+    background-color: #ff6666;
+}
+
+.card1 {
+    grid-area: card1;
+    background-color: #66ff66;
+}
+
+.card2 {
+    grid-area: card2;
+    background-color: #e36f92;
+}
+
+.card3 {
+    grid-area: card3;
+    background-color: #e3cc6f; }
+
+header, aside, article, .card1, .card2, .card3 {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

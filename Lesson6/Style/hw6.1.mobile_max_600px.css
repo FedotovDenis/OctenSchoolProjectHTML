@@ -1,0 +1,18 @@
+@media (max-width: 600px) {
+    .container {
+        grid-template-areas:
+        "header"
+        "main"
+        "aside";
+        grid-auto-rows: 20vh;
+        grid-auto-columns: 1fr;
+    }
+
+    .header, .main, .aside {
+        padding: 15px;
+    }
+
+    span {
+        font-size: 1em;
+    }
+}
